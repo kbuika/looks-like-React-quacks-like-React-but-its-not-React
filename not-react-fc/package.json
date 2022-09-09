@@ -1,0 +1,15 @@
+{
+  "name": "not-react-fc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "esbuild main.js --bundle --minify --sourcemap --outfile=dist/bundle.js --loader:.js=jsx",
+    "preview": "vite preview",
+    "start": "npm run build && npm run dev"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  }
+}
