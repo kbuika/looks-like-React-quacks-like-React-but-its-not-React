@@ -5,7 +5,7 @@ A crude implementation of React from scratch. It highlights some core features i
     
 1. The class component implementation is very hacky and does not accurately represent how class components function (pun intended) under the hood. However, it reflects some of the concepts that class components makes use of.
 
-2. The useState Hook has a subtle bug. When we perform "let state = states[idx] || initialValue;" and the value of states[idx] is 0, the state picks the initialValue. I ignored this because I was writing the code in ungodly hours of the night and my mental capacity was quickly diminishing.
+2. The useState Hook has a subtle bug. When we perform ```js let state = states[idx] || initialValue; ``` and the value of ```js states[idx] ``` is 0, the state picks the initialValue. I ignored this because I was writing the code in ungodly hours of the night and my mental capacity was quickly diminishing.
 
 
 ## How to run
