@@ -5,7 +5,7 @@ A crude implementation of React from scratch. It highlights some core features i
     
 1. The class component implementation is very hacky and does not accurately represent how class components function (pun intended) under the hood. However, it reflects some of the concepts that class components makes use of.
 
-2. The useState Hook has a subtle bug. When we perform ```js let state = states[idx] || initialValue; ``` and the value of ```js states[idx] ``` is 0, the state picks the initialValue. I ignored this because I was writing the code in ungodly hours of the night and my mental capacity was quickly diminishing.
+2. The useState Hook has a subtle bug. When we perform ```let state = states[idx] || initialValue; ``` and the value of ```states[idx] ``` is 0, the state picks the initialValue. I ignored this because I was writing the code in ungodly hours of the night and my mental capacity was quickly diminishing.
 
 
 ## How to run
@@ -27,7 +27,7 @@ The unique command that allows us to treat the jsx in our js as "cool"
     "build": "esbuild main.js --bundle --minify --sourcemap --outfile=dist/bundle.js --loader:.js=jsx",
 ```
 
-This introduces a build step to bundle our ```js main.js ``` into ```js dist/bundle.js```. This way, the jsx we have inside ```js main.js ``` will be bundled into js. That is why in our index.html, we use the script ```js dist/bundle.js``` 
+This introduces a build step to bundle our ```main.js ``` into ```dist/bundle.js```. This way, the jsx we have inside ```main.js ``` will be bundled into js. That is why in our index.html, we use the script ```dist/bundle.js``` 
 
 
 #### Hack Away :)
